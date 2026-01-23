@@ -4,10 +4,11 @@
 // Higher price → try selling, update maxProfit
 // Reason it works: Best sell depends on min price before it
 // Buy always happens before sell (left → right scan)
-// Time: O(n), Space: O(1)
+// Time: O(n)
+// Space: O(1)
  
  
-class BestTimetoBuyandSellStock {
+class BestTimetoBuyandSellStock{
     public int maxProfit(int[] prices) {
         int buy=prices[0];
         int maxProfit=0;
