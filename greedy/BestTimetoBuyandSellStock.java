@@ -16,9 +16,9 @@ class BestTimetoBuyandSellStock{
             if(minPrice>prices[i]){
                 minPrice=prices[i];
             }
-            int profit=prices[i]-minPrice;
-            if(profit>maxProfit){
-                maxProfit=profit;
+            int profits=prices[i]-minPrice;
+            if(profits>maxProfit){
+                maxProfit=profits;
             }
         }
         return maxProfit;
