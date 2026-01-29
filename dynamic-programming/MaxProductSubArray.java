@@ -4,7 +4,7 @@
 // Why min matters: Negative × negative can become the new maximum
 // Invariant: oldMax/oldMin = best/worst product ending at previous index
 // Zero rule: Zero resets both max and min to 0 (fresh start)
-// Time: O(n), Space: O(1)
+// Time:O(n), Space:O(1)
 
 class MaxProductSubArray {
     public int maxProduct(int[] nums) {
