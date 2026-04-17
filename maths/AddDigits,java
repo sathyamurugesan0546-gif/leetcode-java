@@ -1,0 +1,23 @@
+// Pattern: Math (Digital Root)
+// Core move: Use modulo 9 pattern
+// (num - 1) % 9 + 1 gives result directly
+// Special case: num == 0 → return 0
+// Multiples of 9 → answer = 9 (not 0)
+// Time: O(1)
+// Space: O(1)
+
+class AddDigits{
+    public int addDigits(int num) {
+        int sum=0;
+        if(num == 0){
+            sum=0;
+        }
+        else if(num % 9 == 0){
+            sum=9;
+        }
+        else{
+            sum=num%9;
+        }
+        return sum;
+    }
+}
